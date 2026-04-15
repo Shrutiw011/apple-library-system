@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiksha Library</title>
+    <!-- Inter Font for Apple-like typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/apple-library-system/assets/index-DsRBITcr.js"></script>
+    <link rel="stylesheet" crossorigin href="/apple-library-system/assets/index-BxNoTkXk.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="glass-nav">
+        <div class="nav-content">
+          <div class="logo">
+            <i data-lucide="library"></i>
+            <span>Shiksha Library</span>
+          </div>
+          <div class="nav-links">
+            <button class="nav-item active" data-view="dashboard">Dashboard</button>
+            <button class="nav-item" data-view="books">Books</button>
+            <button class="nav-item" data-view="members">Members</button>
+            <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+              <i data-lucide="moon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main id="main-content" class="container">
+        <!-- Views will be injected here via JS -->
+      </main>
+
+      <!-- Global Modals Container -->
+      <div id="modal-container"></div>
+    </div>
+    
+    <!-- Lucide Icons mapping -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
+</html>
