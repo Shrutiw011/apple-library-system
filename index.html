@@ -9,24 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/apple-library-system/assets/index-DsRBITcr.js"></script>
-    <link rel="stylesheet" crossorigin href="/apple-library-system/assets/index-BxNoTkXk.css">
+    <script type="module" crossorigin src="/apple-library-system/assets/index-OFSh_jG1.js"></script>
+    <link rel="stylesheet" crossorigin href="/apple-library-system/assets/index-CznUPpAJ.css">
   </head>
   <body>
     <div id="app">
-      <!-- Navigation -->
-      <nav class="glass-nav">
+      <!-- Navigation (Hidden on Login) -->
+      <nav class="glass-nav" id="main-nav" style="display: none;">
         <div class="nav-content">
           <div class="logo">
             <i data-lucide="library"></i>
             <span>Shiksha Library</span>
           </div>
-          <div class="nav-links">
+          <div class="nav-links" id="nav-links-container">
             <button class="nav-item active" data-view="dashboard">Dashboard</button>
             <button class="nav-item" data-view="books">Books</button>
-            <button class="nav-item" data-view="members">Members</button>
+            <button class="nav-item" data-view="members" id="nav-members">Members</button>
+            <div style="width: 1px; height: 20px; background: var(--glass-border); margin: 0 10px;"></div>
             <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
               <i data-lucide="moon"></i>
+            </button>
+            <button class="icon-btn" id="btn-logout" aria-label="Logout" title="Logout" style="color: var(--danger-color)">
+              <i data-lucide="log-out"></i>
             </button>
           </div>
         </div>
@@ -34,7 +38,7 @@
 
       <!-- Main Content Area -->
       <main id="main-content" class="container">
-        <!-- Views will be injected here via JS -->
+        <!-- Views injected here -->
       </main>
 
       <!-- Global Modals Container -->
